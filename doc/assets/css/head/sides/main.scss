@@ -17,3 +17,38 @@
 h1:before, h2:before, h3:before, h4:before {
   font-weight: bold;
 }
+
+
+/* ========== SIDEBAR TITLE ========== */
+.section-title {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    font-size: clamp(14px, 15vw, 1.15rem);
+    padding-bottom: 5px;
+    margin-bottom: clamp(12px, 1.5vw, 2.5rem);
+    border-bottom: 1px solid #2D3444;
+    color: #F8F8FF;
+    font-weight: 600;
+    position: relative;
+}
+
+.section-title span{
+    padding-right: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 37px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #2D3444;
+}
+
+.section-title svg {
+    width: 1.85;
+    height: 1.85rem;
+    color: #ff4500;
+}

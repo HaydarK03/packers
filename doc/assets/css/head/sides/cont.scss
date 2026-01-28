@@ -1,0 +1,25 @@
+/* ========== CONTRIBUTORS ========== */
+.contributors-section .people-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 1.5vw, 16px);
+}
+
+.contributors-section .person-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.contributors-section .person-avatar {
+    width: clamp(48px, 5vw, 56px);
+    height: clamp(48px, 5vw, 56px);
+    border-radius: 50%;
+    border: 2px solid #2D3444;
+    transition: border-color 0.25s ease;
+}
+
+.contributors-section .person-item:hover .person-avatar {
+    border-color: #ff4500;
+}
